@@ -18,5 +18,12 @@ pipeline{
             }
           }
         }
+        stage('Nginx Reload') {
+          steps{
+            dir("build_${BUILD_NUMBER}"){
+                sh 'sudo nginx -s reload'
+            }
+          }
+        }
     }
 }
