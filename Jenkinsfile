@@ -6,7 +6,7 @@ pipeline{
           steps{
             dir("build_${BUILD_NUMBER}"){
                 echo "git fetching"
-                git branch: 'main', url: 'https://github.com/thesilentcoderr/jenkins-flask.git'
+                git branch: 'main', url: 'https://github.com/thesilentcoderr/jenkins-simlink-buildNum.git'
                 echo "fetch done"
             }
           }
