@@ -14,7 +14,7 @@ pipeline{
         stage('Nginx Config') {
           steps{
             dir("build_${BUILD_NUMBER}"){
-                sh 'ln -sf /home/ec2-user/build_symlink/build_${BUILD_NUMBER}/index.html /home/ec2-user/public_html/index.html'
+                sh 'ln -sf /home/ec2-user/workspace/build_symlink/build_${BUILD_NUMBER}/index.html /home/ec2-user/public_html/index.html'
             }
           }
         }
