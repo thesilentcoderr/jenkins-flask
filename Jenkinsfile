@@ -1,5 +1,5 @@
 pipeline{
-    agent { label 'dev' }
+    agent { label 'prod' }
     
     stages{
         stage('Git Fetch') {
