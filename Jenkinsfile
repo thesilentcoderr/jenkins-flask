@@ -1,5 +1,5 @@
 pipeline{
-    agent { label 'prod' }
+    agent { label 'docker' }
     
     stages{
         stage('Git Fetch') {
